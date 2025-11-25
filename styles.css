@@ -1,0 +1,167 @@
+:root {
+    --color-background: #2D0070; 
+    --color-primary: #FFC300;    
+    --color-secondary: #FF5733;  
+    --color-text-light: #F8F8F8; 
+    --color-text-dark: #333333;  
+    
+    --font-family-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    --spacing-large: 2.5rem;
+    --spacing-medium: 1.5rem;
+}
+
+body {
+    background-color: var(--color-background); 
+    color: var(--color-text-light);
+    font-family: var(--font-family-main);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: var(--spacing-medium) var(--spacing-large);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--color-primary);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-primary); 
+    border-bottom: 2px solid var(--color-primary);
+}
+
+section {
+    padding: var(--spacing-large);
+    margin: var(--spacing-large) auto;
+    max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.05); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    color: var(--color-secondary);
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.profile-img {
+    display: block; 
+    margin: 0 auto 20px auto; 
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 5px solid var(--color-primary);
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-text-dark);
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+}
+
+footer {
+    background-color: var(--color-text-light);
+    color: var(--color-text-dark);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+
+.art-showcase, .movie-reviews {
+    margin-top: var(--spacing-large);
+    padding: var(--spacing-medium);
+    border: 1px dashed rgba(255, 255, 255, 0.2); 
+    border-radius: 4px;
+}
+
+.art-showcase h3, .movie-reviews h3 {
+    color: var(--color-primary);
+    border-bottom: none;
+}
+
+.art-gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.art-item {
+    width: 22%; 
+    height: auto;
+    border: 2px solid var(--color-secondary);
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.art-item:hover {
+    transform: scale(1.05);
+}
+
+.review-card {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-left: 5px solid var(--color-secondary);
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.review-card h4 {
+    margin-top: 0;
+    color: var(--color-text-light);
+}
+
+.rating {
+    font-size: 1.2em;
+    margin: 5px 0 10px 0;
+}
+
+.movie-poster {
+    max-width: 150px; 
+    height: auto;
+    display: block; 
+    margin: 10px auto; 
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
